@@ -13,29 +13,474 @@
 	
   </head>
   
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- BODY -->
+   <!-- FONT-BODY CONTROLS FONT FOR WHOLE SITE -->
+   <body class="min-h-screen bg-gray-100 ">
+
+      
+	  <!-- META & VIEWPORT -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta charset="UTF-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	   <meta name="description" content="My Meta Description">
+	   <meta name="keywords" content="HTML, CSS, JavaScript">
+	   <meta name="author" content="John Doe">
+	   
+      
+	  <!-- LINKS - NO SLASH IN PATH  --> 
+      <link href="styles.css" rel="stylesheet">
+	  <!-- CDN <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+     
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+            integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+         <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+
+
+<!-- PRE-HEADLINE -->
+
 <!-- 
-  <body>
-    <%= yield %>
-  </body>
--->
-  
-  <body class="min-h-screen bg-gray-100">
-    <div class="container mx-auto">
+	<div class="bg-grey-300 text-grey-500 text-center p-3 ">
+		<div class="text-base"><a href="#" class="font-semibold underline">COVID-19 UPDATE:</a> We're still taking orders and making secure, no-contact deliveries on devices that are all UV sanitised before dispatch.
+</div>
+</div>
+--> 
+		 
+
+
+
+
+<nav class="flex flex-wrap  items-center bg-gray-500 p-3 ">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-current text-white h-8 w-8 mr-2"
+        >
+          <path
+            d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+          />
+        </svg>
+        <span class="text-xl text-white font-bold uppercase tracking-wide"
+          >Design Butler</span
+        >
+      </a>
+      <button class="text-white inline-flex p-3 hover:bg-gray-800 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation">
+        <i class="material-icons">menu</i>
+      </button>
+      <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto mt-3" id="navigation">
+      <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  
+		flex flex-col lg:h-auto">
+          
+          <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-800 hover:text-white "
+          >
+            <span>Articles</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $(".nav-toggler").each(function(_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function() {
+      $(target).animate({
+        height: "toggle"
+      });
+    });
+  });
+});
+
+</script>
+
+
+
+
 		
-		<button class="btn">MyButton</button>
+	
 		
-      <%= yield %>
-    </div>
-  </body>
+	  
+	
+		
+		<!-- CONTENT CONTAINER -->	
+		
+<!-- flex and flex-wrap THIS ALLOWS THE FOOTER TO CLEAR -->
+         <div class=" flex flex-wrap  ">
+			 
+			 
+	   			<!-- LEFT COLUMN -->
+  			  <div class=" sm:flex-wrap md:w-2/3 lg:w-2/3 bg-gray-100 pt-5 px-10 py-10 pb-10 text-left text-grey-900 h-auto  ">
+
+
+			
+			<!-- ><h1>Left Col</h1> --> 
+			
+            <h1 class="text-3xl font-bold text-center text-grey-900 pb-3 leading-tight">What is the Best Unlimited Graphic Design Company?</h1>	
+			<h2 class="text-2xl font-semi-bold text-center text-gray-900 pb-6 leading-tight">
+				 
+				Learn More Below!</h2>
+				
+
+
+
+<!-- BUTTON TEST -->
+<button class="btn">
+  Button
+</button>
+
+
+      
+<!-- >		
+		  <p class=" text-grey-600 pb-3 ">By: Dan Hodgins</p>
+
+	   <p class="text-grey-600 pb-5">
+		  Before we start, here is a quick comparison of the top unlimited graphic design companies:</p>
+--> 
+		  
+<!-- COMPARISON TABLE -->	
+			  
+<table class="shadow-none bg-white w-full mb-5  text-center ">
+  <tr>
+	 
+    <th class="bg-white border text-center px-6 py-2">Penji</th>
+    <th class="bg-white border text-center px-6 py-2">Design Pickle </th>
+    <th class="bg-white border text-center px-6 py-2">No Limit Creatives</th>
+  </tr>
+  <tr>
+
+    <td class="border px-6 py-2">
+    	Unlimited requests
+    </td>
+    <td class="border px-6 py-2">
+    	Unlimited requests
+    </td>
+    <td class="border px-6 py-2">
+    	Unlimited requests
+	</td>
+  </tr>
+  <tr>
+	  
+    <td class="border px-6 py-2">Unlimited revisions</td>
+    <td class="border px-6 py-2">Unlimited revisions</td>
+    <td class="border px-6 py-2">Unlimited revisions</td>
+  </tr>
+  <tr>
+	  
+    <td class="border px-6 py-2">30 day guarantee</td>
+    <td class="border px-6 py-2">30 day guarantee</td>
+    <td class="border px-6 py-2">30 day guarantee</td>
+  </tr>
   
+  <tr>
+     
+     <td class="border px-4 py-4">
+ 		<button class="w-full py-3 px-6 mt-4 text-lg text-blue-700 rounded bg-transparent font-medium uppercase shadow-l hover:bg-blue-800 hover:text-white focus:outline-none lg:mt-0 border border-solid border-2 border-blue-500 hover:border-transparent rounded ">View</button>
+ 	</td>
+	
+	  	
+    <td class="border px-4 py-4">
+	 		<button class="w-full py-3 px-6 mt-4 text-lg text-blue-700 rounded bg-transparent font-medium uppercase shadow-l hover:bg-blue-800 hover:text-white focus:outline-none lg:mt-0 border border-solid border-2 border-blue-500 hover:border-transparent rounded ">View</button>
+	 	</td>
+	
+    <td class="border px-4 py-4">
+	 		<button class="w-full py-3 px-6 mt-4 text-lg text-blue-700 rounded bg-transparent font-medium uppercase shadow-l hover:bg-blue-800 hover:text-white focus:outline-none lg:mt-0 border border-solid border-2 border-blue-500 hover:border-transparent rounded ">View</button>
+	 	</td>
+    
+ 
+ 
+  </tr>
   
+</table>
+			  
+			  
+			  
+			  
+			  <p class="text-grey-600 pb-3">Now, let's explore the idea of unlimited design on a membership or subscription basis so we can get a better idea of what the best option for you is.</p>
+			  
+
+		 <h3 class="text-lg font-medium pb-3 text-grey-700">What Is Unlimited Graphic Design?</h3>
+
+		  <p class="text-grey-600 pb-3">Unlimited design refers to a service or company that provides as many graphic design deliverables as you can handle each month. The more you use the service, the more value you'll get. </p>
+
+		  <p class="text-grey-600 pb-3">Most will provide any kind of day-to-day production graphic design you'll need - with the exception of original logos / branding and website design development. </p>
+
+		  <p class="text-grey-600 pb-3">
+		 Check the pricing for <a href="https://www.designbutler.co/articles/2-how-much-is-unlimited-graphic-design-price-cost">each company</a> separately 
+		 to see what they offer versus the others.</p>
+
+		  <p class="text-grey-600 pb-3">If you are wondering <a href="https://www.designbutler.co/articles/8-where-can-i-find-hire-outstanding-graphic-designers-to-work-with-project-hourly-basis">where you can find a good freelance graphic designer</a> then 
+		 check out <a href="https://www.designbutler.co/articles/8-where-can-i-find-hire-outstanding-graphic-designers-to-work-with-project-hourly-basis">this post</a>.  </p>
+
+		  <p class="text-grey-600 pb-3">Go here for <a href="https://www.designbutler.co/articles/1-what-is-the-best-unlimited-graphic-design-service">tips on outsourcing graphic design work</a>
+		 to a team, agency or freelancer.</p>
+
+		<h3 class="text-lg font-medium pb-3 text-grey-700">How Many Unlimited Graphic Design Services / Companies Are There?</h3>
+
+		  <p class="text-grey-600 pb-3">There are dozens of design companies around the world offering this type of service. Here is a list of every unlimited design company that we could find.</p>
+
+		 <h2 class="text-2xl font-semibold pb-3 text-grey-900">Top Unlimited Graphic Design Companies</h2>
+
+
+
+		  <p class="text-grey-600 pb-3">Read on to see plenty more companies offering unlimited design for a monthly subscription!</p>
+
+		<h3 class="text-lg font-medium pb-2 text-grey-700">Design Pickle</h3>
+		  <p class="text-grey-600 pb-3">Founded by Russ Perry, a former agency owner <a href="https://designpickle.com">Design Pickle</a> is one of the top Unlimited Graphic Design Companies in the world, and for good reason. If you were to choose another company besides ours this is who we would recommend. <a href="https://designpickle.com">Check Pricing</a></p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">Kapa99</h3>
+		<p class="text-grey-600 pb-3"><a href="https://kapa99.com/">Kapa99</a> is endorsed by John Lee Dumas of EntrepreneurOnFire.com and they seem pretty solid. Have a look at their offering!</p>
+
+		<h3 class="text-lg font-medium pb-2 text-grey-700">Flocksy</h3>
+		 <p class="text-grey-600 pb-3">In their words, <a href="https://flocksy.com">Flocksy</a> is the earth's largest provider of Unlimited Design, web development and copywriting. Note that they offer more than just graphic design. If that's your thing, then they might be worth looking at. </p>
+
+
+		<h3 class="text-lg font-medium pb-2 text-grey-700">Unlimitly</h3>
+		 <p class="text-grey-600 pb-3"><a href="https://unlimitly.com">Unlimitly</a> is proud to offer: "Unlimited design tasks for online marketers." Check them out if you aren't feeling any of the offerings above.</p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">Penji</h3>
+		  
+		  <p class="text-grey-600 pb-3"><a href="https://penji.co">Penji</a> is one of the: "Highest rated Unlimited Design Service. We help startups, agencies, and Merch by Amazon sellers achieve more." Looks like they are a solid contender, so make sure to check them out as well.</p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">UnDullify</h3>
+		  
+		  <p class="text-grey-600 pb-3"><a href="https://undullify.com">UnDullify</a> offers: "Unlimited designs for Web or Print: banners ads, flyers, Facebook ads, brochures, posters, business cards, blog graphics, and more." They have a number of different pricing plans which makes their offering interesting, so if your only concern is price then have a look!</p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">UnicornGo</h3>
+		  
+		  <p class="text-grey-600 pb-3"><a href="https://www.unicorngo.com">UnicornGo</a> offers a pretty standard unlimited design service at a rate similar to other companies.</p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">Graphics Zoo</h4>
+		  
+		  <p class="text-grey-600 pb-3"><a href="https://www.graphicszoo.com">Graphics Zoo</a> provides: "Unlimited Design services packages for your business." They seem to enjoy using plenty of plurals in their copy ; ) </p>
+
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">No Limit Creatives</h3>
+		  <p class="text-grey-600 pb-3"><a href="https://www.nolimitcreatives.com/">No Limit Creatives</a> - in their words exactly: "Flate rate design service that gives businesses custom graphics and video ads for one monthly rate." I have never heard of "Flate" rate design, but the video ad part sounds intriguing : )  </p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">Hue</h3>
+		  <p class="text-grey-600 pb-3"><a href="https://www.gethue.co">Hue</a> is: "Changing the way businesses handle day-to-day graphic design tasks." This may be true for business that have not heard of the concept of unlimited design. Otherwise, these guys sound pretty similar to everyone else. </p>
+
+		 <h3 class="text-lg font-medium pb-2 text-grey-700">PaperCloud</h3>
+		  <p class="text-grey-600 pb-3"><a href="https://papercloud.co">PaperCloud</a> provides "Agency quality unlimited design service at non-agency prices."</p>
+
+		  <p class="text-grey-600 pb-3">Here is a list of other Unlimited Design agencies / companies: </p>
+
+		 <ul class="p-3 text-grey-600">
+		 <li class="p-3 text-grey-600 hover:text-red"><a class="text-blue-500" href="https://www.designpac.net" c>DesignPac</a></li>
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://dezigner.io">Dezigner</a></li>
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://limitlessdesigns.io/">Limitless Designs</a></li>
+
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://advertflair.com">Advert Flair</a></li>
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://draftss.com">Draftss</a></li>
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://fusiongroupusa.com">Fusion Group</a></li>
+		 <li class="p-3 text-grey-600"><a class="text-blue-500" href="https://designertask.com">Designer Task</a></li>
+		 </ul>
+
+		  <p class="text-grey-600 pb-3">Well there you have it. Tons of companies offering unlimited design deliverables. Which one will you choose?</p>
+
+
+		  <p class="text-grey-600 pb-3">No matter which one you select we recommend that you <a href="https://www.designbutler.co/pricing.php">get started</a> today as design can be a powerful way to help you achieve your marketing and business goals! </p> 
+			 
+	
+	
+
+ <!-- CONVERSION BOX LEFT BOTTOM --> 	
+<!-- FORM -->
+ <form>
+  <div class="mt-5 p-5 text-center items-center border border-gray-300 bg-white">
+	
+	 <h3 class="text-lg font-bold text-grey-700 pb-4">Get an In-Depth Comparison of These 
+Unlimited Design Companies (Free PDF)</h3>  
+	  
+      <label class="block text-gray-700 text-sm font-bold pb-3">
+        Best Email Address
+      </label>
+      <input class=" appearance-none border-2 border-grey-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="me@gmail.com">
+      <p class="text-grey-500 text-xs italic pb-2">Enter your best email address.</p>
+   
   
+	  
+  	  <button class="w-full py-3 px-6 mt-4 text-sm text-white rounded bg-blue-500 uppercase shadow-l hover:bg-blue-800 focus:outline-none  lg:mt-0 ">Continue</button>
+	
+	
+  </form>
+  <p class="text-center text-gray-500 text-xs pt-2">
+    We wont sell your email address.
+  </p>
+
+ </div><!-- FORM -->	 
+		
+		
+	</div><!-- LEFT COLUMN -->	
+	
+  <!-- RIGHT COLUMN -->
   
-  
-  
-  
-  
-  
+  <div class="sm:flex-wrap  md:w-0 md:w-1/3 lg:w-1/3 bg-gray-200 p-5 text-center text-gray-700 h-auto ">	
+
+<!-- START: CONVERSION BOX RIGHT SIDEBAR -->
+
+<!-- FIXED CLASS - ADDS MARGIN RIGHT FOR SOME REASON?? MR-5 is necessary to fix the bug -->
+<div class="fixed mr-5">
+<div id="form_wrapper" >	
+<div class="p-5 items-center border border-gray-300 bg-white">
+
+ <form >
+	 
+<h3 class="min-w-full text-lg font-medium text-grey-700  ">Get an In-Depth Comparison of These 
+Unlimited Design Companies (Free PDF) </h3>
+	 
+
+<p class="font-lg text-white ">my paragraphy</p>
+
+	  
+      <label class="block text-gray-700 text-sm font-bold pb-3">
+        Best Email Address
+      </label>
+      <input class="w-full py-2 px-3 mb-3  border-2 border-grey-500 rounded leading-tight text-gray-700   focus:outline-none focus:shadow-outline" type="email" placeholder=" me@gmail.com">
+      <p class="text-grey-500 text-xs italic pb-2">Enter your best email address.</p>
+   
+ 
+	  
+  	  <button class="w-full py-3 px-6 mt-4 text-lg text-white rounded bg-blue-500 font-medium uppercase shadow-l hover:bg-blue-800 focus:outline-none  lg:mt-0 ">Continue</button>
+	  
+	
+	
+  </form>
+  <p class="text-center text-gray-500 text-xs pt-2">
+    We wont sell your email address.
+  </p>
+
+ </div>
+</div><!-- FORM WRAPPER -->
+</div>
+<!-- END: CONVERSION BOX RIGHT SIDEBAR -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ <div class="p-3 text-center items-center border border-gray-600">
+<p class="p-3 text-grey-600">What is Lorem Ipsum?</p>
+
+<p class="p-3 text-grey-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	
+</div>	
+--> 	
+	
+</div><!-- RIGHT COLUMN -->
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="w-full">	 
+
+
+<!-- COLUMN 1 -->
+
+<div class="w-full bg-gray-200 p-4 text-center text-gray-700 
+">
+
+
+ <h3 class="text-sm font-bold pb-2 text-gray-500">Popular Articles</h3>
+
+
+
+<ul class="p-2 text-grey-500">
+		 <li class="text-sm p-3 text-gray-500 hover:text-blue-800"><a  href="https://www.designbutler.co/articles/12-how-fast-should-graphic-design-turnaround-times-be" c>What is the Best Unlimited Graphic Design Service?</a></li>
+		 
+		<li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.designbutler.co/articles/12-how-fast-should-graphic-design-turnaround-times-be">How Fast Should Graphic Design Turnaround Times Be?</a></li>
+		 
+		 <li class="text-sm p-2  text-gray-500 hover:text-blue-800"><a  href="https://www.designbutler.co/articles/13-powerpoint-presentation-design-part-1">Powerpoint Presentation Design Part 1: Principle of Coherence</a></li>
+		 
+<li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.designbutler.co/articles/11-how-do-I-test-evaluate-a-graphic-designers-ability">How Do I Test / Evaluate a Graphic Designer's Ability?</a></li>		
+		 
+		 
+</ul>
+</div>
+
+
+
+
+
+<!-- COLUMN 2 -->
+
+<div class="w-full bg-gray-200 p-4 text-center text-gray-700 
+">
+
+
+ <h3 class="text-sm font-bold pb-2 text-gray-500">Follow Us</h3>
+
+
+
+
+
+<ul class="p-2 text-grey-600">
+		 <li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.instagram.com/designbutler/" c>Instagram</a></li>
+		 <li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://twitter.com/designbutler_">Twitter</a></li>
+		 <li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.youtube.com/channel/UCGgDirp7x9mnW09BTl5PnMw/">YouTube</a></li>
+		  <li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.facebook.com/thedesignbutler">Facebook</a></li>
+		  <li class="text-sm p-2 text-gray-500 hover:text-blue-800"><a  href="https://www.linkedin.com/company/thedesignbutler/">LinkedIn</a></li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+<!-- COPYRIGHT -->
+<div class="w-full bg-gray-100 p-4 text-center text-gray-600 h-auto text-s">
+Copyright &copy; <script>document.write(new Date().getFullYear())</script> Design Butler&trade; Media Inc. |  All Rights Reserved. | <a href="https://www.designbutler.co/privacy-policy" class="underline text-sm text-grey-darkest hover:text-grey-darker ">Privacy Policy</a> | <a href="https://www.designbutler.co/sitemap.xml" class="underline text-sm text-grey-darkest hover:text-grey-darker">Sitemap</a>
+</div>
+
+<div class="w-full bg-gray-100 p-4 text-center text-gray-400 h-auto text-xs">
+Global Headquarters | 210-145 5th Street West - North Vancouver, BC Canada - V7M 1J7 
+</div>
+
+
+
+
+
+</div><!-- FOOTER -->	
+	
+</div><!-- CONTAINER -->
+
+
+
+		 
+   </body>
 </html>
 
 
