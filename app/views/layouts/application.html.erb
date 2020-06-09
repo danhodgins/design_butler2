@@ -6,6 +6,11 @@
 
 	<%= stylesheet_pack_tag 'stylesheets', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	
+	<%= tinymce_assets %>
+	 <script type="text/javascript" src="/assets/tinymce.js"></script>
+	
+	
   </head>
   
 <!-- 
@@ -16,6 +21,9 @@
   
   <body class="min-h-screen bg-gray-100">
     <div class="container mx-auto">
+		
+		<button class="btn">MyButton</button>
+		
       <%= yield %>
     </div>
   </body>

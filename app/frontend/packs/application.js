@@ -18,3 +18,5 @@
 console.log('Hello World from Webpacker')
 
 import './stylesheets.css'
+
+//= require tinymce

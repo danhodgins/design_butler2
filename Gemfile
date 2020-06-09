@@ -21,8 +21,11 @@ gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-
+# to fix rails console problem of readline library not loading 
 gem 'rb-readline'
+
+#rich text editor 
+gem 'tinymce-rails'
 
 
 # Use CoffeeScript for .coffee assets and views
