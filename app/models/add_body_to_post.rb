@@ -1,2 +1,0 @@
-class AddBodyToPost < ApplicationRecord
-end
