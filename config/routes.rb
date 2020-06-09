@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :add_body_to_posts
   root 'posts#index'
     
   resources :posts
