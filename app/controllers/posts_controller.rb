@@ -42,9 +42,12 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
+        
+        
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
+        flash[:alert] = "post not saved!"
         format.html { render :edit }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
@@ -69,6 +72,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:headline, :sub_headline)
+      params.require(:post).permit(:headline, :sub_headline, :body)
     end
 end

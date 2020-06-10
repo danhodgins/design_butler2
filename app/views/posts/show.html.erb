@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Headline:</strong>
-  <%= @post.headline %>
-</p>
 
-<p>
-  <strong>Sub headline:</strong>
-  <%= @post.sub_headline %>
-</p>
+  <%#= @post.headline.html_safe %>
+
+  <%#= @post.sub_headline.html_safe %>
+
+  <%= @post.body.html_safe %>
+
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
